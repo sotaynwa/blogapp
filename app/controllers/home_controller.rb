@@ -4,6 +4,5 @@ class HomeController < ApplicationController
   end
   
   def about
-    @about = 'このページは私たちについて説明しているページです'
   end
 end
