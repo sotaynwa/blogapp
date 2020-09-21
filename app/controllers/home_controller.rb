@@ -1,9 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @title = 'デイトラ'
+    @article = Article.first
   end
   
   def about
-    @about = 'このページは私たちについて説明しているページです'
   end
 end
