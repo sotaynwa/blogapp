@@ -1,0 +1,26 @@
+current directory: /Users/sotatakeda/blog-app/vendor/bundle/ruby/2.6.0/gems/strscan-1.0.3/ext/strscan
+/Users/sotatakeda/.rbenv/versions/2.6.5/bin/ruby -I /Users/sotatakeda/.rbenv/versions/2.6.5/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200928-10103-9lhdxw.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/sotatakeda/blog-app/vendor/bundle/ruby/2.6.0/gems/strscan-1.0.3/ext/strscan
+make "DESTDIR=" clean
+
+current directory: /Users/sotatakeda/blog-app/vendor/bundle/ruby/2.6.0/gems/strscan-1.0.3/ext/strscan
+make "DESTDIR="
+compiling strscan.c
+strscan.c:504:43: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+        onig_region_set(&(p->regs), 0, p->curr, p->curr + length);
+        ~~~~~~~~~~~~~~~                ~~~^~~~
+strscan.c:504:57: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+        onig_region_set(&(p->regs), 0, p->curr, p->curr + length);
+        ~~~~~~~~~~~~~~~                         ~~~~~~~~^~~~~~~~
+strscan.c:508:43: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+        onig_region_set(&(p->regs), 0, 0, length);
+        ~~~~~~~~~~~~~~~                   ^~~~~~
+3 warnings generated.
+linking shared-object strscan.bundle
+
+current directory: /Users/sotatakeda/blog-app/vendor/bundle/ruby/2.6.0/gems/strscan-1.0.3/ext/strscan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20200928-10103-x9wnig
